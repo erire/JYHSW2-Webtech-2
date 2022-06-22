@@ -1,0 +1,19 @@
+<div id="container" class="row justify-content-center mt-5">
+    <div class="col-md-4">
+        <form [formGroup]="authorForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label>Author Name</label>
+            <input class="form-control" type="text" formControlName="name" required>
+          </div>
+   
+          <div class="form-group">
+            <label>Date of Birth</label>
+            <input class="form-control" type="text" formControlName="Date_of_Birth" required>
+          </div>
+   
+          <div class="form-group">
+            <button class="btn btn-primary btn-block" type="submit">Add Book</button>
+          </div>
+        </form>
+    </div>
+  </div>
